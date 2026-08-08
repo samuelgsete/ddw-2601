@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <title>Desenvolvimento Web I</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Quicksand", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+            }
+
+            html, body {
+                width: 1oovh;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                row-gap: 12px;
+                align-items: center;
+            }
+
+            p {
+                font-size: 19px;
+                color: #757575;
+            }
+
+            h1 { color: #262626; }
+
+            button {
+                font-size: 17px;
+                padding: 16px 32px;
+                border: none;
+                font-weight: 660;
+                cursor: pointer;
+                color: #F3E5F5;
+                background-color:#4f057c;
+                transition: all 0.4s;
+                margin: 8px 0;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            }
+
+            button:hover {
+                background-color:#6A1B9A;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <img src="./logo.jpg" alt="Despertar Digital" width="320px">
+            <h1>Desenvolvimento Web I</h1>
+            <p>Clique no botão abaixo para acessar o material de apoio do curso</p>
+            <button type="button" onclick="irPara()">Material de apoio</button>
+        </main>
+        <script>
+            function irPara() { 
+                window.location.href = 'https://drive.google.com/drive/folders/1_1f9Cpxr88D0HIj3icY5NTqwv_Tn4KFy?usp=sharing';
+            }
+        </script>
+    </body>
+</html>
