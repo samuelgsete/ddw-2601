@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./base.css">
+        <title>Desenvolvimento Web I</title>
+    </head>
+    <body>
+        <main>
+            <img src="./logo.jpg" alt="Despertar Digital" width="320px">
+            <h1>Boas-vindas</h1>
+            <ul id="alunos"></ul>
+            <button type="button" onclick="voltar()">Voltar</button>
+        </main>
+        <script>
+            const alunos = [
+                {
+                    nome: "DJALMA RONCY QUEIROZ VIEIRA",
+                    url: "#"
+                },
+                {
+                    nome: "DJALMYRTON COSTA FERNANDES",
+                    url: "#"
+                },
+                {
+                    nome: "FAGNER DE SOUSA DA ROCHA",
+                    url: "#"
+                },
+                {
+                    nome: "GERMANO INÁCIO DA SILVA JUNIOR",
+                    url: "#"
+                },
+                {
+                    nome: "GUSTAVO BARROS DE AQUINO",
+                    url: "#"
+                },
+                {
+                    nome: "IARLEY DA SILVA GADELHA",
+                    url: "#"
+                },
+                {
+                    nome: "JOHN HERMESON DE LIMA RODRIGUES",
+                    url: "#"
+                },
+                {
+                    nome: "MARIA EDINIR OLIVEIRA FRAGA",
+                    url: "#"
+                },
+                {
+                    nome: "MARIANA VITORIA DE LIMA FARIAS",
+                    url: "#"
+                },
+                {
+                    nome: "MARINA MAYRA OLIVEIRA DOS SANTOS",
+                    url: "#"
+                },
+                {
+                    nome: "MONICK ELLEN CAVALCANTE DE SOUSA",
+                    url: "#"
+                },
+                {
+                    nome: "PAULO VICTOR RAMOS CAVALCANTE",
+                    url: "#"
+                }
+            ];
+
+            const html = alunos.map(aluno => {
+                return `
+                    <li>
+                        <a href="${aluno.url}">
+                            ${aluno.nome}    
+                        </a>    
+                    </li>
+                `;
+            }).join("");
+
+            document.getElementById('alunos').innerHTML = html;
+
+            function voltar() { 
+                window.location.href = './index.html';
+            }
+        </script>
+    </body>
+</html>
