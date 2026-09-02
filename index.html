@@ -13,8 +13,14 @@
 
             p {
                 font-size: 19px;
-                color: #757575;
+                color: #636363;
                 text-align: center;
+            }
+
+            p.turma {
+                font-size: 19px;
+                font-weight: 600;
+                color: #670c9f;
             }
         </style>
     </head>
@@ -22,14 +28,16 @@
         <main>
             <img src="./logo.jpg" alt="Despertar Digital" width="320px">
             <h1>Desenvolvimento Web I</h1>
+            <p class="turma">Turma.: DDW-2601</p>
             <p>Clique no botão abaixo para acessar o material de apoio do curso</p>
-            <button type="button" onclick="irPara()">Material de apoio</button>
-            <a href="./boas-vindas.html">Boas-vindas</a>
+            <a class="btn" href="https://www.dropbox.com/scl/fo/ylbcxq0yrsxftknlajrb0/AM5UWRIhtls204zV78IrxsM?rlkey=a5twrcvr0nxecxndv8o98dikl&st=add8h6ah&dl=0" target="_blank">
+                Material de Apoio
+            </a>
+            <a class="default-link" href="./boas-vindas.html">Boas-vindas</a>
         </main>
-        <script>
-            function irPara() { 
-                window.location.href = 'https://www.dropbox.com/scl/fo/ylbcxq0yrsxftknlajrb0/AM5UWRIhtls204zV78IrxsM?rlkey=a5twrcvr0nxecxndv8o98dikl&st=add8h6ah&dl=0';
-            }
-        </script>
+
+        <footer>
+            Prof. Samuel Souza
+        </footer>
     </body>
 </html>
