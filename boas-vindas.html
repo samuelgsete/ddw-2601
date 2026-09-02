@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
             <img src="./logo.jpg" alt="Despertar Digital" width="320px">
             <h1>Boas-vindas</h1>
             <ul id="alunos"></ul>
-            <a class="btn" href="./index.html" onclick="voltar()">Voltar</a>
+            <a class="btn" href="./index.html">Voltar</a>
         </main>
         <script>
             const alunos = [
@@ -84,9 +85,6 @@
 
             document.getElementById('alunos').innerHTML = html;
 
-            function voltar() { 
-                window.location.href = './index.html';
-            }
         </script>
     </body>
 </html>
