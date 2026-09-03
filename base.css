@@ -15,6 +15,8 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #1c1c1c;
+    overflow: hidden;
 }
 
 main {
@@ -22,7 +24,7 @@ main {
     flex-direction: column;
     row-gap: 12px;
     align-items: center;
-    overflow: auto;
+    overflow: hidden;
 }
 
 button, a.btn {
@@ -45,20 +47,20 @@ button:hover, a.btn:hover {
 }
 
 h1 { 
-    color: #262626;
+    color: #c3c3c3;
     font-size: 28px;
 }
 
 a.default-link {
     font-size: 18px;
-    color: #6A1B9A;
+    color: #dcc3ec;
     font-weight: 500;
     text-decoration: none;
 }
 
 a.default-link:hover {
     text-decoration: underline;
-    color:#4f057c;
+    color:#c1b8c6;
 }
 
 footer {
@@ -68,6 +70,29 @@ footer {
     font-size: 18px;
     font-weight: 550;
     position: absolute;
+    color: #cecdcf;
     bottom: 10px;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid #353535;
+}
+
+ul li::marker {
+    color: white;
+}
+
+.page {
+    animation: pageEnter 0.5s ease;
+}
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        filter: blur(0);
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(5px);
+        transform: translateY(0);
+    }
 }

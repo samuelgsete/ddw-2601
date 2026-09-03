@@ -10,9 +10,9 @@
         <link rel="stylesheet" href="./base.css">
         <title>Desenvolvimento Web I</title>
     </head>
-    <body>
+    <body class="page">
         <main>
-            <img src="./logo.jpg" alt="Despertar Digital" width="320px">
+            <img src="./logo.png" alt="Despertar Digital" width="320px">
             <h1>Boas-vindas</h1>
             <ul id="alunos"></ul>
             <a class="btn" href="./index.html">Voltar</a>
@@ -76,7 +76,7 @@
             const html = alunos.map(aluno => {
                 return `
                     <li>
-                        <a href="${aluno.url}" target="blank">
+                        <a class="default-link" href="${aluno.url}" target="blank">
                             ${aluno.nome}    
                         </a>    
                     </li>
