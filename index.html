@@ -23,6 +23,27 @@
                 font-weight: 600;
                 color: #c2b6ca;
             }
+
+            details > summary {
+                color: #f1eff3;
+                font-size: 18px;
+                font-weight: 650;
+                cursor: pointer;
+            }
+
+            details > summary:hover {
+                color: #c2b6ca
+            }
+
+            ul.link-list {
+                display: flex;
+                flex-direction: column;
+                gap: -1px;
+            }
+
+            ul.link-list > * {
+                margin-left: 50px;
+            }
         </style>
     </head>
     <body class="page">
@@ -30,11 +51,23 @@
             <img src="./logo.png" alt="Despertar Digital" width="320px">
             <h1>Desenvolvimento Web I</h1>
             <p class="turma">Turma.: DDW-2601</p>
-            <p>Clique no botão abaixo para acessar o material de apoio do curso</p>
+            <p>Olá, clique no botão abaixo para acessar o material de apoio do curso</p>
             <a class="btn" href="https://www.dropbox.com/scl/fo/ylbcxq0yrsxftknlajrb0/AM5UWRIhtls204zV78IrxsM?rlkey=a5twrcvr0nxecxndv8o98dikl&st=add8h6ah&dl=0" target="_blank">
                 Material de Apoio
             </a>
-            <a class="default-link" href="./boas-vindas.html">Boas-vindas</a>
+
+            <details>
+                <summary>Links úteis</summary>
+
+                <ul class="link-list">
+                    <li><a class="default-link" href="./boas-vindas.html" target="_blank">Formulário de Boas-vindas</a></li>
+                    <li><a class="default-link" href="./encerramento.html" target="_blank">Formulário de Encerramento</a></li>
+                    <li><a class="default-link" href="./projetos/index.html" target="_blank">Projetos publicados</a></li>
+                </ul>
+                
+            </details>
+
+            
         </main>
 
         <footer>
